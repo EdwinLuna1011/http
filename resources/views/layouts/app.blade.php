@@ -73,9 +73,9 @@ $cantidad = session('carrito') ? count(session('carrito')) : 0;
 </a>
 
 {{-- 🔥 LOGIN DINÁMICO --}}
-@if(session('user'))
+   @if(session('cliente'))
 <a href="/perfil" class="text-sm font-medium text-gray-700 hover:text-pink-500">
-{{ session('user')['nombre'] }}
+{{ session('cliente')['nombre'] }}
 </a>
 
 <a href="/logout" class="text-sm font-medium text-red-500 hover:text-red-700">

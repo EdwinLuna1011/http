@@ -57,7 +57,7 @@ if(!empty($usuario['imagen'])){
 
 <input type="text" name="nombre" value="{{ $usuario['nombre'] }}" class="w-full border p-2 mb-2 rounded">
 <input type="email" name="email" value="{{ $usuario['email'] }}" class="w-full border p-2 mb-2 rounded">
-<input type="text" name="puesto" value="{{ $usuario['puesto'] }}" class="w-full border p-2 mb-2 rounded">
+<input type="text" name="puesto" value="{{ $usuario['puesto'] ?? '' }}" class="w-full border p-2 mb-2 rounded">
 
 <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
 Actualizar datos
